@@ -1,0 +1,392 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f1f1d9;
+}
+
+/*-------- navbar part ---------- */
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.navbar-left {
+    font-weight: 700;
+    font-size: 25px;
+    color: #3A3A3A;
+    margin-left: 40px;
+}
+
+.navbar-right ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 40px;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.navbar-right ul li a {
+    text-decoration: none;
+    color: #3A3A3A;
+
+
+}
+
+.fa-magnifying-glass {
+    color: #3A3A3A;
+}
+
+.fa-cart-shopping {
+    color: #3A3A3A;
+}
+
+/* influencer section  */
+.influencer-description h1 {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.influencer-description p {
+    font-size: 17px;
+    margin-top: 20px;
+}
+
+
+.influencer-description {
+    width: 60%;
+    color: #3A3A3A;
+    margin-top: 116px;
+
+}
+
+.influencer-description button {
+    border: 1px solid #E02C6D;
+    background-color: #E02C6D;
+    border-radius: 20px;
+    padding: 5px 15px;
+    color: white;
+    margin-top: 20px;
+}
+
+.fa-arrow-right {
+    margin-left: 5px;
+}
+
+.influencer-section {
+    display: flex;
+    justify-content: center;
+
+}
+
+.influencer-section img {
+    width: 90%;
+    margin-top: 20px;
+    margin-left: 39px;
+}
+
+/* logos part */
+.logos {
+    display: flex;
+    justify-content: space-evenly
+}
+
+.logos-part hr {
+    width: 80%;
+    margin: 0px auto;
+    border: 1px solid #ededed;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.logos-part {
+    margin-top: 46px;
+}
+
+/* popular section */
+.popular-collection-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 50px;
+
+}
+
+.popular-collection-image img {
+    width: 85%;
+    height: 200px;
+    border-radius: 10px;
+    margin-top: 10px;
+
+
+}
+
+.popular-collection-image {
+
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.single-popular-collection {
+    width: 60%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 0px auto;
+    padding-bottom: 10px;
+
+}
+
+.single-popular-collection h3,
+h5,
+p {
+    text-align: center;
+    color: black;
+}
+
+.popular-collection h2 {
+    text-align: center;
+    color: #3A3A3A;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+.fa-star {
+    color: #434bc2;
+}
+
+.fa-star-half-stroke {
+    color: #434bc2;
+}
+
+.site-details {
+    text-decoration: none;
+    display: inline-block;
+    text-align: right;
+    width: 93%;
+    margin-top: 30px;
+    color: #E02C6D
+}
+
+/* feature influencing */
+.feature-influencing {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 0px;
+}
+
+.feature-influencing img {
+    width: 100%;
+}
+
+.feature-influencing-details {
+    color: #3A3A3A;
+    width: 50%;
+}
+
+.feature-influencing-details h1 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.feature-influencing-details button {
+    border: 1px solid #E02C6D;
+    background-color: #E02C6D;
+    border-radius: 20px;
+    padding: 5px 15px;
+    color: white;
+    display: block;
+    margin: 12px auto;
+}
+
+/* footer part */
+footer h2 {
+    text-align: center;
+    color: white;
+}
+
+.footer-authorization p {
+    color: white;
+}
+
+.icon {
+    margin: 5px 10px;
+    color: white;
+}
+
+.media-icon {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    padding: 20px 0px;
+    background-color: rgb(5, 5, 38);
+    width: 100%;
+
+}
+
+/* animation part */
+@keyframes animate {
+    to {
+        /* transform: rotate(-220deg) scale(0.5); */
+        transform: rotate(0deg);
+        transition-timing-function: ease-in-out;
+
+    }
+
+    from {
+
+        transform: rotate(-360deg) scale(-0.5);
+        transition-timing-function: ease-in-out;
+
+    }
+}
+
+.camera {
+    animation: animate 8.5s infinite;
+
+}
+
+/* responsive part */
+/* responsive for little device */
+@media (max-width:540px) {
+    .navbar {
+        flex-direction: column;
+        background-color: rgba(175, 192, 192, 0.871);
+
+    }
+
+    .navbar-right ul li {
+
+        display: block;
+        margin: 0px;
+
+
+    }
+
+    .navbar-left {
+        margin: 0px;
+        text-align: center;
+    }
+
+    .influencer-section {
+        flex-direction: column;
+        margin: 0px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .influencer-description {
+        margin-top: 15px;
+    }
+
+    .influencer-section img {
+        margin: 0px;
+    }
+
+    .logos {
+        flex-direction: column;
+    }
+
+    .logos img {
+        width: 50%;
+        margin: 20px auto;
+    }
+
+    .popular-collection-details {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .feature-influencing {
+        flex-direction: column;
+    }
+
+    .feature-influencing-details {
+        margin-top: 20px;
+    }
+
+    .feature-influencing img {
+        display: block;
+        width: 80%;
+        margin: 0px auto;
+    }
+
+    .influencer-description p {
+
+        margin: 20px auto;
+    }
+
+    .influencer-description h1 {
+        text-align: center;
+    }
+
+    .influencer-description button {
+        display: block;
+        margin: 10px auto;
+    }
+}
+
+/* responsive for medium device */
+@media (min-width:541px) and (max-width:1299px) {
+    .navbar {
+        flex-direction: column;
+        background-color: rgba(174, 174, 239, 0.348);
+
+    }
+
+    .navbar-right ul li {
+
+        display: block;
+        margin: 0px;
+
+
+    }
+
+    .navbar-left {
+        margin: 0px;
+        text-align: center;
+    }
+
+
+    .influencer-description {
+        margin-top: 4.2em;
+        margin-left: 20px;
+    }
+
+    .influencer-section img {
+        margin-top: 20px;
+    }
+
+    .popular-collection-details {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .feature-influencing {
+        flex-direction: column;
+    }
+
+    .feature-influencing-details {
+        margin-top: 20px;
+    }
+
+    .influencer-description h1 {
+        text-align: center;
+    }
+
+    .influencer-description button {
+        display: block;
+        margin: 10px auto;
+    }
+
+}
